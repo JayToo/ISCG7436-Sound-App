@@ -69,88 +69,59 @@
                 <viewController id="umD-ch-vRi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h1Q-3m-3qt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2Q-4A-ks6">
-                                <rect key="frame" x="20" y="577" width="335" height="70"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="UMq-Wb-snb"/>
-                                    <constraint firstAttribute="height" constant="70" id="iQV-ga-Uab"/>
-                                </constraints>
-                                <state key="normal" title="Meow 6"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq7-qO-C9B">
-                                <rect key="frame" x="20" y="499" width="335" height="70"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="P1x-RM-I8d"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="Tlh-Er-xj1"/>
-                                </constraints>
-                                <state key="normal" title="Meow 5"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNu-D1-Wqs">
-                                <rect key="frame" x="20" y="421" width="335" height="70"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="Ibo-lc-H8c"/>
-                                </constraints>
-                                <state key="normal" title="Meow 4"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-eT-doy">
-                                <rect key="frame" x="20" y="343" width="335" height="70"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="OFd-Nv-2EC"/>
-                                </constraints>
-                                <state key="normal" title="Meow 3"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZg-54-PtN">
-                                <rect key="frame" x="20" y="265" width="335" height="70"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="F4Y-wE-4wc"/>
-                                </constraints>
-                                <state key="normal" title="Meow 2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5is-iM-XMy">
-                                <rect key="frame" x="20" y="187" width="335" height="70"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="t0M-bL-gzf"/>
-                                </constraints>
-                                <state key="normal" title="Meow 1"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8X6-ie-1ky">
+                                <rect key="frame" x="5" y="25" width="365" height="622"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5is-iM-XMy">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="100.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Meow 1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZg-54-PtN">
+                                        <rect key="frame" x="0.0" y="104.5" width="365" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Meow 2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-eT-doy">
+                                        <rect key="frame" x="0.0" y="208.5" width="365" height="100.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Meow 3"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNu-D1-Wqs">
+                                        <rect key="frame" x="0.0" y="313" width="365" height="100.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Meow 4"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq7-qO-C9B">
+                                        <rect key="frame" x="0.0" y="417.5" width="365" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Meow 5"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2Q-4A-ks6">
+                                        <rect key="frame" x="0.0" y="521.5" width="365" height="100.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Meow 6"/>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=regular" insetsLayoutMarginsFromSafeArea="NO"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bZg-54-PtN" firstAttribute="leading" secondItem="h6U-eT-doy" secondAttribute="leading" id="0FG-Qj-hSb"/>
-                            <constraint firstItem="hH0-6E-Du3" firstAttribute="trailing" secondItem="cNu-D1-Wqs" secondAttribute="trailing" constant="20" id="6bX-z5-hbw"/>
-                            <constraint firstItem="bZg-54-PtN" firstAttribute="leading" secondItem="Aq7-qO-C9B" secondAttribute="leading" id="6i4-Xr-SOs"/>
-                            <constraint firstItem="cNu-D1-Wqs" firstAttribute="top" secondItem="h6U-eT-doy" secondAttribute="bottom" constant="8" id="ByX-wZ-mqv"/>
-                            <constraint firstItem="bZg-54-PtN" firstAttribute="top" secondItem="5is-iM-XMy" secondAttribute="bottom" constant="8" id="Cy5-4M-Ob6"/>
-                            <constraint firstItem="hH0-6E-Du3" firstAttribute="bottom" secondItem="D2Q-4A-ks6" secondAttribute="bottom" constant="20" id="Fnq-rp-zVQ"/>
-                            <constraint firstItem="bZg-54-PtN" firstAttribute="trailing" secondItem="h6U-eT-doy" secondAttribute="trailing" id="Iiu-uy-nam"/>
-                            <constraint firstItem="bZg-54-PtN" firstAttribute="leading" secondItem="5is-iM-XMy" secondAttribute="leading" id="Iv6-kd-yDg"/>
-                            <constraint firstItem="D2Q-4A-ks6" firstAttribute="leading" secondItem="hH0-6E-Du3" secondAttribute="leading" constant="20" id="Lgh-mr-VgB"/>
-                            <constraint firstItem="bZg-54-PtN" firstAttribute="trailing" secondItem="Aq7-qO-C9B" secondAttribute="trailing" id="OFx-ap-uab"/>
-                            <constraint firstItem="cNu-D1-Wqs" firstAttribute="leading" secondItem="hH0-6E-Du3" secondAttribute="leading" constant="20" id="OSs-32-Moo"/>
-                            <constraint firstItem="hH0-6E-Du3" firstAttribute="trailing" secondItem="cNu-D1-Wqs" secondAttribute="trailing" constant="20" id="RsN-JB-tRz"/>
-                            <constraint firstItem="h6U-eT-doy" firstAttribute="top" secondItem="bZg-54-PtN" secondAttribute="bottom" constant="8" id="UsR-Pl-SEA"/>
-                            <constraint firstItem="Aq7-qO-C9B" firstAttribute="leading" secondItem="D2Q-4A-ks6" secondAttribute="leading" id="anv-QA-6HK"/>
-                            <constraint firstItem="hH0-6E-Du3" firstAttribute="trailing" secondItem="D2Q-4A-ks6" secondAttribute="trailing" constant="20" id="k7o-N9-tmd"/>
-                            <constraint firstItem="Aq7-qO-C9B" firstAttribute="trailing" secondItem="D2Q-4A-ks6" secondAttribute="trailing" id="ks0-nH-2lU"/>
-                            <constraint firstItem="D2Q-4A-ks6" firstAttribute="top" secondItem="Aq7-qO-C9B" secondAttribute="bottom" constant="8" id="sSq-qd-kps"/>
-                            <constraint firstItem="bZg-54-PtN" firstAttribute="trailing" secondItem="5is-iM-XMy" secondAttribute="trailing" id="tDM-tY-tHk"/>
-                            <constraint firstItem="Aq7-qO-C9B" firstAttribute="top" secondItem="cNu-D1-Wqs" secondAttribute="bottom" constant="8" symbolic="YES" id="urb-1p-w8U"/>
-                            <constraint firstItem="hH0-6E-Du3" firstAttribute="trailing" secondItem="cNu-D1-Wqs" secondAttribute="trailing" constant="20" id="xI1-bx-7jS"/>
+                            <constraint firstItem="8X6-ie-1ky" firstAttribute="leading" secondItem="hH0-6E-Du3" secondAttribute="leading" constant="5" id="RbY-9y-pEi"/>
+                            <constraint firstItem="8X6-ie-1ky" firstAttribute="top" secondItem="hH0-6E-Du3" secondAttribute="top" constant="5" id="ZG3-zE-TVS"/>
+                            <constraint firstItem="hH0-6E-Du3" firstAttribute="bottom" secondItem="8X6-ie-1ky" secondAttribute="bottom" constant="20" id="pos-qD-dzC"/>
+                            <constraint firstItem="hH0-6E-Du3" firstAttribute="trailing" secondItem="8X6-ie-1ky" secondAttribute="trailing" constant="5" id="zzH-u4-hAd"/>
                         </constraints>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
                         <viewLayoutGuide key="safeArea" id="hH0-6E-Du3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2L0-Zq-cY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1362" y="-401"/>
+            <point key="canvasLocation" x="1360.8" y="-401.64917541229386"/>
         </scene>
     </scenes>
 </document>
