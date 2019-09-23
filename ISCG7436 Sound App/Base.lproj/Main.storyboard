@@ -13,32 +13,38 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISCG7436_Sound_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main menu" id="BYZ-38-t0r" customClass="ViewController" customModule="ISCG7436_Sound_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yck-fj-GFX">
-                                <rect key="frame" x="139" y="287" width="107" height="74"/>
+                                <rect key="frame" x="122" y="158" width="107" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat Piano"/>
                                 <connections>
-                                    <segue destination="umD-ch-vRi" kind="presentation" id="Q1P-rk-D07"/>
+                                    <action selector="menuClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hoa-Ij-bt9"/>
+                                    <segue destination="umD-ch-vRi" kind="show" id="Q1P-rk-D07"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7V-AT-h5J">
-                                <rect key="frame" x="139" y="445" width="73" height="30"/>
+                                <rect key="frame" x="96" y="384" width="145" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Movie SFX"/>
                                 <connections>
-                                    <segue destination="ox3-Qv-3gd" kind="presentation" id="9NC-qa-vxC"/>
+                                    <action selector="menuClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJE-fx-cYY"/>
+                                    <segue destination="ox3-Qv-3gd" kind="show" id="Mqb-cy-eL4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QA-Pa-Cmk">
-                                <rect key="frame" x="149" y="455" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4lS-ft-ng5">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Sound SFX" id="Rrh-nN-9Vj"/>
+                                    <tabBarItem title="Settings" id="w1j-Yi-jmF"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -48,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--sound FX-->
         <scene sceneID="T8g-2N-sSQ">
             <objects>
-                <viewController id="ox3-Qv-3gd" sceneMemberID="viewController">
+                <viewController title="sound FX" id="ox3-Qv-3gd" customClass="ViewController" customModule="ISCG7436_Sound_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OwU-f1-81l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,43 +72,65 @@
         <!--View Controller-->
         <scene sceneID="CqL-Un-Jwt">
             <objects>
-                <viewController id="umD-ch-vRi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Cat Piano" id="umD-ch-vRi" customClass="ViewController" customModule="ISCG7436_Sound_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h1Q-3m-3qt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8X6-ie-1ky">
+                            <stackView opaque="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8X6-ie-1ky">
                                 <rect key="frame" x="5" y="25" width="365" height="622"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5is-iM-XMy">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="100.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Meow 1"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZg-54-PtN">
-                                        <rect key="frame" x="0.0" y="104.5" width="365" height="100"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Meow 2"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-eT-doy">
-                                        <rect key="frame" x="0.0" y="208.5" width="365" height="100.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Meow 3"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNu-D1-Wqs">
-                                        <rect key="frame" x="0.0" y="313" width="365" height="100.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Meow 4"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq7-qO-C9B">
-                                        <rect key="frame" x="0.0" y="417.5" width="365" height="100"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Meow 5"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2Q-4A-ks6">
-                                        <rect key="frame" x="0.0" y="521.5" width="365" height="100.5"/>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2Q-4A-ks6">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="97"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Meow 6"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="xrM-Pe-Css"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq7-qO-C9B">
+                                        <rect key="frame" x="0.0" y="105" width="365" height="97"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Meow 5"/>
+                                        <connections>
+                                            <action selector="buttonClick:" destination="fu3-uI-ICo" eventType="touchUpInside" id="tv3-5Z-V4D"/>
+                                            <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="al7-rO-tML"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNu-D1-Wqs">
+                                        <rect key="frame" x="0.0" y="210" width="365" height="97"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Meow 4"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="ptc-hj-dHr"/>
+                                            <action selector="onClick:" destination="fu3-uI-ICo" eventType="touchUpInside" id="BTV-cK-woX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-eT-doy">
+                                        <rect key="frame" x="0.0" y="315" width="365" height="97"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Meow 3"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="9vW-3i-jFU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZg-54-PtN">
+                                        <rect key="frame" x="0.0" y="420" width="365" height="97"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Meow 2"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="39v-uU-dBu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5is-iM-XMy">
+                                        <rect key="frame" x="0.0" y="525" width="365" height="97"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Meow 1"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="QOF-17-J2d"/>
+                                            <action selector="buttonClicked:" destination="fu3-uI-ICo" eventType="touchUpInside" id="RWC-Xu-bm1"/>
+                                            <action selector="buttonPush:" destination="fu3-uI-ICo" eventType="touchUpInside" id="vlS-fA-s7F"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="heightClass=regular-widthClass=regular" insetsLayoutMarginsFromSafeArea="NO"/>
@@ -112,7 +140,7 @@
                         <constraints>
                             <constraint firstItem="8X6-ie-1ky" firstAttribute="leading" secondItem="hH0-6E-Du3" secondAttribute="leading" constant="5" id="RbY-9y-pEi"/>
                             <constraint firstItem="8X6-ie-1ky" firstAttribute="top" secondItem="hH0-6E-Du3" secondAttribute="top" constant="5" id="ZG3-zE-TVS"/>
-                            <constraint firstItem="hH0-6E-Du3" firstAttribute="bottom" secondItem="8X6-ie-1ky" secondAttribute="bottom" constant="20" id="pos-qD-dzC"/>
+                            <constraint firstItem="hH0-6E-Du3" firstAttribute="bottom" secondItem="8X6-ie-1ky" secondAttribute="bottom" constant="20" id="bKM-Eh-UyR"/>
                             <constraint firstItem="hH0-6E-Du3" firstAttribute="trailing" secondItem="8X6-ie-1ky" secondAttribute="trailing" constant="5" id="zzH-u4-hAd"/>
                         </constraints>
                         <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
@@ -120,6 +148,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2L0-Zq-cY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fu3-uI-ICo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1360.8" y="-401.64917541229386"/>
         </scene>

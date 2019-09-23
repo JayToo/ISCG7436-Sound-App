@@ -12,6 +12,7 @@
 		6AA5D5CF2335E77500CC290C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D5CD2335E77500CC290C /* Main.storyboard */; };
 		6AA5D5D12335E77600CC290C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D5D02335E77600CC290C /* Assets.xcassets */; };
 		6AA5D5D42335E77600CC290C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D5D22335E77600CC290C /* LaunchScreen.storyboard */; };
+		6AA5D5DC2337216200CC290C /* cats meow in Resources */ = {isa = PBXBuildFile; fileRef = 6AA5D5DB2337216200CC290C /* cats meow */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6AA5D5D02335E77600CC290C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AA5D5D32335E77600CC290C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AA5D5D52335E77600CC290C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AA5D5DB2337216200CC290C /* cats meow */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "cats meow"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		6AA5D5C82335E77500CC290C /* ISCG7436 Sound App */ = {
 			isa = PBXGroup;
 			children = (
+				6AA5D5DB2337216200CC290C /* cats meow */,
 				6AA5D5C92335E77500CC290C /* AppDelegate.swift */,
 				6AA5D5CB2335E77500CC290C /* ViewController.swift */,
 				6AA5D5CD2335E77500CC290C /* Main.storyboard */,
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA5D5DC2337216200CC290C /* cats meow in Resources */,
 				6AA5D5D42335E77600CC290C /* LaunchScreen.storyboard in Resources */,
 				6AA5D5D12335E77600CC290C /* Assets.xcassets in Resources */,
 				6AA5D5CF2335E77500CC290C /* Main.storyboard in Resources */,
