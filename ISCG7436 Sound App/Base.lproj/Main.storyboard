@@ -80,6 +80,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1om-VS-KHx">
                                         <rect key="frame" x="301" y="5" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="MuteToggle:" destination="umD-ch-vRi" eventType="valueChanged" id="oVy-jl-HFr"/>
+                                        </connections>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q36-xO-CiZ">
                                         <rect key="frame" x="8" y="5" width="82" height="30"/>
@@ -113,7 +116,6 @@
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2Q-4A-ks6">
                                         <rect key="frame" x="0.0" y="0.0" width="365" height="90.5"/>
                                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Meow 6"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="xrM-Pe-Css"/>
                                         </connections>
@@ -121,7 +123,6 @@
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq7-qO-C9B">
                                         <rect key="frame" x="0.0" y="98.5" width="365" height="90"/>
                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Meow 5"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="al7-rO-tML"/>
                                         </connections>
@@ -129,7 +130,6 @@
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNu-D1-Wqs">
                                         <rect key="frame" x="0.0" y="196.5" width="365" height="90.5"/>
                                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Meow 4"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="ptc-hj-dHr"/>
                                         </connections>
@@ -137,7 +137,6 @@
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-eT-doy">
                                         <rect key="frame" x="0.0" y="295" width="365" height="90.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Meow 3"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="9vW-3i-jFU"/>
                                         </connections>
@@ -145,7 +144,6 @@
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZg-54-PtN">
                                         <rect key="frame" x="0.0" y="393.5" width="365" height="90"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Meow 2"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="39v-uU-dBu"/>
                                         </connections>
@@ -153,7 +151,6 @@
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5is-iM-XMy">
                                         <rect key="frame" x="0.0" y="491.5" width="365" height="90.5"/>
                                         <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Meow 1"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="umD-ch-vRi" eventType="touchUpInside" id="QOF-17-J2d"/>
                                         </connections>

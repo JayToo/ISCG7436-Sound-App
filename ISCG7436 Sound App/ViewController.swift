@@ -23,10 +23,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
    
+    @IBAction func MuteToggle(_ sender: UISwitch) {
+        if sender.isOn == true{
+            catsMuted = true
+        }else {
+            catsMuted = false
+        }
+    }
     
     
     @IBAction func buttonClicked(_ sender: UIButton) {
-        print("IS this working?")
+        //print("IS this button working?")
         
         /*
          bottom to top cat piano button
@@ -47,8 +54,9 @@ class ViewController: UIViewController {
         
         tagName = sender.tag - 1
         meowName = catSound[tagName]
-        print(meowName + String(tagName))
+        //print(meowName + " " + String(tagName))
         //play sound
+        if catsMuted == false {
         if let soundResource = Bundle.main.url(forResource: meowName, withExtension: "wav", subdirectory: "Sounds"){
             do{
                 audioPlayer = try AVAudioPlayer(contentsOf: soundResource)
@@ -59,6 +67,7 @@ class ViewController: UIViewController {
             }
             
             
+        }
         }
         
     }
