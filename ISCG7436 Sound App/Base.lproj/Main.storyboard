@@ -72,20 +72,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLT-fd-tWu">
                                 <rect key="frame" x="0.0" y="20" width="375" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGh-RN-6rY">
-                                        <rect key="frame" x="253" y="9" width="39" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGh-RN-6rY">
+                                        <rect key="frame" x="237" y="10" width="39" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1om-VS-KHx">
-                                        <rect key="frame" x="311" y="5" width="49" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1om-VS-KHx">
+                                        <rect key="frame" x="301" y="5" width="51" height="31"/>
                                     </switch>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q36-xO-CiZ">
-                                        <rect key="frame" x="8" y="6" width="95" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q36-xO-CiZ">
+                                        <rect key="frame" x="8" y="5" width="82" height="30"/>
                                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Segue Back">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,7 +94,17 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zGh-RN-6rY" secondAttribute="bottom" constant="9" id="6nk-Cp-xLf"/>
+                                    <constraint firstAttribute="bottom" secondItem="1om-VS-KHx" secondAttribute="bottom" constant="4" id="8UC-wN-GK1"/>
+                                    <constraint firstItem="zGh-RN-6rY" firstAttribute="top" secondItem="GLT-fd-tWu" secondAttribute="top" constant="10" id="HRC-od-xox"/>
+                                    <constraint firstItem="Q36-xO-CiZ" firstAttribute="top" secondItem="GLT-fd-tWu" secondAttribute="top" constant="5" id="MsO-Pg-mNF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q36-xO-CiZ" secondAttribute="bottom" constant="5" id="NnQ-H0-iKO"/>
+                                    <constraint firstItem="Q36-xO-CiZ" firstAttribute="leading" secondItem="GLT-fd-tWu" secondAttribute="leading" constant="8" id="QnJ-h3-udX"/>
+                                    <constraint firstItem="1om-VS-KHx" firstAttribute="top" secondItem="GLT-fd-tWu" secondAttribute="top" constant="5" id="SZ1-pf-wUJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="1om-VS-KHx" secondAttribute="trailing" constant="25" id="Sq3-Tj-YEd"/>
+                                    <constraint firstItem="1om-VS-KHx" firstAttribute="leading" secondItem="zGh-RN-6rY" secondAttribute="trailing" constant="25" id="W8R-dj-qaS"/>
                                     <constraint firstAttribute="height" constant="40" id="WoV-8g-Ywz"/>
+                                    <constraint firstItem="1om-VS-KHx" firstAttribute="leading" secondItem="zGh-RN-6rY" secondAttribute="trailing" constant="25" id="Xnu-wg-xmQ"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8X6-ie-1ky">
