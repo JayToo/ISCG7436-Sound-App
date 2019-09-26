@@ -31,17 +31,17 @@ class ViewController: UIViewController {
         /*
          bottom to top cat piano button
          
-         button 1 = tag 1
-         button 2 = tag 2
-         button 3 = tag 3
-         button 4 = tag 4
-         button 5 - tag 5
+         button 1 = tag 1       drums board
+         button 2 = tag 2       button on e = tag 7
+         button 3 = tag 3       button two = tag 8
+         button 4 = tag 4       button three = tag 9
+         button 5 - tag 5       button four = tag 10
          button 6 = tag 6
          
          do a  get tag -1 then use the value to access an array containing sound file string
          */
         
-        let catSound = ["cat-meow1","cat-meow2","cat-meow3","cat-meow4","cat-meow5","cat-meow6"]
+        let catSound = ["cat-meow1","cat-meow2","cat-meow3","cat-meow4","cat-meow5","cat-meow6","beat_heavy","beat_jug","drum_bass","drum_quick"]
         var meowName = ""
         var tagName: Int //used to store tag name - 1 to get button 1-6 into array index 0-5
         

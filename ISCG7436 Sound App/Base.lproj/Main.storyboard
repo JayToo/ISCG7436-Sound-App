@@ -35,7 +35,9 @@
                                         <rect key="frame" x="0.0" y="316.5" width="375" height="286.5"/>
                                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                        <state key="normal" title="Drum SFX"/>
+                                        <state key="normal" title="Drum SFX">
+                                            <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="menuClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJE-fx-cYY"/>
                                             <segue destination="WWQ-yT-Z4U" kind="show" id="wj4-My-Ur1"/>
@@ -174,7 +176,7 @@
         <!--View Controller-->
         <scene sceneID="Rht-Sc-iFQ">
             <objects>
-                <viewController id="WWQ-yT-Z4U" sceneMemberID="viewController">
+                <viewController id="WWQ-yT-Z4U" customClass="ViewController" customModule="ISCG7436_Sound_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aob-fn-wBZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,30 +187,42 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LZ2-DO-cHF">
                                         <rect key="frame" x="0.0" y="0.0" width="185" height="603"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MP-Qt-hSJ">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MP-Qt-hSJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="185" height="299"/>
                                                 <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Heavy Drums"/>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="WWQ-yT-Z4U" eventType="touchUpInside" id="69b-Mi-KkZ"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5U-iz-aKh">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5U-iz-aKh">
                                                 <rect key="frame" x="0.0" y="304" width="185" height="299"/>
                                                 <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Bass Drum"/>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="WWQ-yT-Z4U" eventType="touchUpInside" id="Svz-4m-kTc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fwL-ub-8rI">
                                         <rect key="frame" x="190" y="0.0" width="185" height="603"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehI-XW-8k9">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehI-XW-8k9">
                                                 <rect key="frame" x="0.0" y="0.0" width="185" height="299"/>
                                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Jug Blow"/>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="WWQ-yT-Z4U" eventType="touchUpInside" id="1tJ-Um-MdA"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpY-OA-GDY">
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpY-OA-GDY">
                                                 <rect key="frame" x="0.0" y="304" width="185" height="299"/>
                                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Quick Drums"/>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="WWQ-yT-Z4U" eventType="touchUpInside" id="USp-hp-vUe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
